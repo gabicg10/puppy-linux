@@ -1,0 +1,117 @@
+html{
+    background-color: #d6f6ed;
+    border-style: ridge;
+    border-width:  10px;
+    border-color: #ffa3ff;
+}
+header, img{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+    
+    header > h1 {
+        margin-bottom: 0;
+    }
+    
+    header > time {
+        font: italic 0.7rem sans-serif;
+    }
+
+h1, h2{
+    text-align: center;
+ }
+   
+ h1, h2 {
+    color: #000000;
+    font-family: URW Chancery L, cursive;
+ }
+ h3 {
+    color: #000000;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+ }
+
+table, th, td {
+    border: 1px solid rgb(176, 248, 236);
+    font-family: Comic Sans MS, Comic Sans, cursive ;
+   border: solid;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+th{
+    font-weight: bold;
+    background-color: #EA8FEA;
+}    
+tr{
+    background-color: #FCC2FC;
+}
+
+.logo{
+    height: 50px;
+}
+.kernel, .tela, .distribuicao{
+    height: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.slider{
+    display:block;
+    height: 25em;
+    width: 25em;
+    margin:auto;
+    position: relative;
+}
+.slider li{
+    list-style: none;
+    position: absolute;
+}
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #FCC2FC;
+    bottom: 10px;
+    cursor: auto;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
